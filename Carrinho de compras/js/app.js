@@ -13,7 +13,7 @@ function adicionar() {
 function incrementaCarrinho(itemSelecionado, precoItem, quantidade) {
 
     //verifica se a quantidade é válida
-    if (quantidade == 0) {
+    if (quantidade <= 0) {
         alert('Quantidade inválida');
         return;
     }
