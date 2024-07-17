@@ -1,5 +1,7 @@
 ## Lógica de Programação: Praticando com Desafios
 
+Este repositório contém os projetos desenvolvidos durante o curso <strong>Lógica de Programação: Praticando com Desafios</strong> da Alura, onde aprendi a construir soluções criativas e eficientes utilizando JavaScript.
+
 ### 🎮 Módulo 1: Aluguel de Jogos
 
 Nesse módulo, você deu seus primeiros passos na programação, aprendendo a criar um sistema simples de aluguel de jogos. Você aprendeu a:
