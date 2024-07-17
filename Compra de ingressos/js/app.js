@@ -22,12 +22,13 @@ function descontaIngresso(itemSelecionado, quantidade) {
                 alert('Ingressos esgotados');
                 document.getElementById('qtd-pista').value = 0;
             }
+
             //verifica se a quantidade é maior que o valor da pista
             else if (quantidade > valorPista) {
-
                 mensagemCompraMaxima(quantidade, valorPista);
                 document.getElementById('qtd-pista').textContent = 0;
             }
+
             //caso contrário, decrementa o valor da pista
             else {
                 document.getElementById('qtd-pista').textContent = valorPista - quantidade;
@@ -35,16 +36,19 @@ function descontaIngresso(itemSelecionado, quantidade) {
             break;
 
         case 'superior':
+
             //verifica se o valor da cadeira superior é 0
             if (valorCadeiraSuperior == 0) {
                 alert('Ingressos esgotados');
                 document.getElementById('qtd-superior').value = 0;
             }
+            
             //verifica se a quantidade é maior que o valor da cadeira superior
             else if (quantidade > valorCadeiraSuperior) {
                 mensagemCompraMaxima(quantidade, valorCadeiraSuperior);
                 document.getElementById('qtd-superior').textContent = 0;
             }
+
             //caso contrário, decrementa o valor da cadeira superior
             else {
                 document.getElementById('qtd-superior').textContent = valorCadeiraSuperior - quantidade;
@@ -52,16 +56,19 @@ function descontaIngresso(itemSelecionado, quantidade) {
             break;
 
         case 'inferior':
+
             //verifica se o valor da cadeira inferior é 0
             if (valorCadeiraInferior == 0) {
                 alert('Ingressos esgotados');
                 document.getElementById('qtd-inferior').value = 0;
             }
+
             //verifica se a quantidade é maior que o valor da cadeira inferior
             else if (quantidade > valorCadeiraInferior) {
                 mensagemCompraMaxima(quantidade, valorCadeiraInferior);
                 document.getElementById('qtd-inferior').textContent = 0;
             }
+            
             //caso contrário, decrementa o valor da cadeira inferior
             else {
                 document.getElementById('qtd-inferior').textContent = valorCadeiraInferior - quantidade;
