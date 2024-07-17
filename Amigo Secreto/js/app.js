@@ -15,11 +15,11 @@ function adicionar() {
     }
 
     //verifica se o participante já foi adicionado
-    if (participantes.includes(nome)) {
+    if (participantes.includes(toUpperCase(nome))) {
         alert('Participante já adicionado!');
         return;
     }
-    
+
     participantes.push(nome);
     document.getElementById('nome-amigo').value = '';
     console.log(participantes);
