@@ -71,7 +71,7 @@ function descontaIngresso(itemSelecionado, quantidade) {
 
 }
 
-// Mensagem de compra máxima
+// Mensagem de compra máxima que retorna a quantidade restante que o usuário não conseguiu comprar
 function mensagemCompraMaxima(quantidade, valor) {
     let quantidadeRestante = quantidade - valor;
     let checaPlural = quantidadeRestante > 1 ? 'ingressos' : 'ingresso';
