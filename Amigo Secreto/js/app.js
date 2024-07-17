@@ -7,6 +7,19 @@ var participantes = [];
 
 function adicionar() {
     var nome = document.getElementById('nome-amigo').value;
+
+    //verifica se o campo está vazio
+    if (nome === '') {
+        alert('Digite o nome do participante!');
+        return;
+    }
+
+    //verifica se o participante já foi adicionado
+    if (participantes.includes(nome)) {
+        alert('Participante já adicionado!');
+        return;
+    }
+    
     participantes.push(nome);
     document.getElementById('nome-amigo').value = '';
     console.log(participantes);
