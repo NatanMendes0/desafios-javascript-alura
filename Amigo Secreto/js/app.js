@@ -15,7 +15,7 @@ function adicionar() {
     }
 
     //verifica se o participante já foi adicionado
-    if (participantes.includes(toUpperCase(nome))) {
+    if (participantes.includes(nome)) {
         alert('Participante já adicionado!');
         return;
     }
